@@ -1,3 +1,4 @@
+To run locally
 ```
 npm install
 npm run dev
@@ -13,6 +14,17 @@ npx prisma migrate dev --name init_schema
 ```
 npx prisma generate --no-engine
 ```
+Deploying on Cloudfare Workers
+```
+npx wrangler login
+```
+```
+npx wrangler whoami
+```
+```
+npm run deploy
+```
+[Main Route](https://medium-project.diwakarsameer27.workers.dev)
 
 #Tech Stack
 React in the frontend
