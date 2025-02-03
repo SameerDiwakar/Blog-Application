@@ -4,6 +4,7 @@ npm install
 npm run dev
 ```
 
+Everytime backend changes
 ```
 npm run deploy
 ```
