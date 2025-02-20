@@ -1,12 +1,8 @@
 import { Blog } from "../hooks"
 import Appbar from "./Appbar"
-import { useEffect } from "react"
 import { Avatar } from "./BlogCard";
 const FullBlog = ({ blog }: { blog: Blog }) => {
-  useEffect(() => {
-    console.log("Blog object in FullBlog component:", blog); // Add this line
-  }, [blog]);
-
+ 
   if (!blog) {
     return <div>Blog not found</div>;
   }
