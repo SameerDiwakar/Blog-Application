@@ -7,9 +7,12 @@ const Blogs = () => {
   const {loading,blogs} =useBlogs()
   if(loading){
     return <div>
+      <Appbar/>
+      <div className="flex flex-col gap-7 justify-center items-center mt-7">
       <BlogSkeleton/>
       <BlogSkeleton/>
       <BlogSkeleton/>
+      </div>
     </div>
   }
 

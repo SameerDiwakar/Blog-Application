@@ -1,4 +1,6 @@
+import Appbar from "../components/Appbar";
 import FullBlog from "../components/FullBlog";
+import Spinner from "../components/Spinner";
 import { useBlog } from "../hooks";
 import { useParams } from "react-router-dom";
 
@@ -7,7 +9,14 @@ const Blog = () => {
   const { loading, blog } = useBlog({
      id: id|| "" });
   if(loading){
-    return <div>Loading...</div>
+    return <div className="">
+    <Appbar/>
+    <div className="h-screen flex flex-col justify-center">
+      <div className="flex justify-center">
+        <Spinner/>
+      </div>
+    </div>
+    </div>
   }
   return (
     <div>
